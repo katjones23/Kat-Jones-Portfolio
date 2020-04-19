@@ -27,8 +27,6 @@ $(document).ready(function () {
       }
     });
   
-    //   $(".portImg").on("click", )
-  
     var rtSiteObj = {
       gif: "./assets/images/rtsite.gif",
       description: "A portfolio site built using HTML, CSS, and Javascript.",
