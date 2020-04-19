@@ -1,0 +1,175 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* image from Pexels https://www.pexels.com/photo/wood-texture-background-pine-82256/ */
+body {
+    background-image: url(./images/backgroundImgTatiana.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navbar border bottom color */
+nav {
+    border-bottom: 1px solid #eeeeee;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 100%;
+}
+
+
+/* Styling for navbar brand */
+#name {
+    font-size: 24px;
+    font-weight: bolder;
+    color: #eeeeee;
+    text-align: center;
+    border: #444444;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Padding between body box and header/footer */
+.body-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+section {
+    padding-top: 100px;
+}
+
+/* Styling for header in body box */
+h2 {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #444444;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-bottom: 2px solid lightgrey;
+    margin: 2% 0 1% 0;
+}
+
+/* Styling of boxes */
+.about-me,
+.portfolio,
+.contact-me {
+    background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+    background: rgba(204, 204, 204, 0.5);
+}
+
+/* Styling and position for profile image */
+.profile {
+    position: relative;
+    width: 200px;
+    height: auto;
+    padding: 1%;
+}
+
+/* Styling for text in About Me box */
+.about-me-text {
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+/* padding for portfolio images */
+.portImg {
+    object-fit: cover;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    cursor: pointer;
+}
+
+.hero-text {
+    text-align: center;
+    padding-top: 3%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    background-color: #eeeeee;
+    opacity: 0.75;
+    width: 85%;
+    font-size: 20px;
+    font-family: 'Times New Roman', serif;
+    cursor: pointer;
+    box-shadow: 5px 5px 2px;
+  }
+
+/* form padding */
+.contact-form {
+    padding-bottom: 25px;
+}
+
+/* Edit width of input boxes */
+.form-input {
+    width: 75%;
+    padding-left: 20px;
+}
+
+/* Submit button styling */
+.contactBtn, .closeBtn {
+    background-color: #444444;
+    border-color: #444444;
+    margin-left: 20px;
+}
+
+.contactBtn:hover {
+    background-color: #eeeeee;
+    border-color: #eeeeee;
+    color: #444444;
+}
+
+#myFooter {
+    border-top: 1px solid #eeeeee;
+    width: 100%;
+}
+
+#linkedinIcon, #githubIcon {
+    color: #eeeeee;
+    padding: 5px;
+}
+
+#githubIcon {
+    height: 10px;
+}
+
+.gif {
+    padding: 0 5% 5% 5%;
+}
+
+.projectDescription {
+    text-align: center;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+   /* adjusts box padding */
+    .body-container {
+       padding-top: 100px;
+       padding-right: 25px;
+       padding-left: 25px;
+   }
+   
+    /* centers box after 768px breakpoint */
+    .about-me,
+    .portfolio,
+    .contact-me {
+        margin: 0 auto;
+    }
+
+    /* styles navbar brand after menu collapse */
+    .navbar-brand {
+        position: absolute;
+        margin-top: 5px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .profile {
+        width: auto;
+    }
+}
