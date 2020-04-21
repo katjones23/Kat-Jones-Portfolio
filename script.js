@@ -30,13 +30,15 @@ $(document).ready(function () {
     var rtSiteObj = {
       gif: "./assets/images/rtsite.gif",
       description: "A portfolio site built using HTML, CSS, and Javascript.",
-      url: "https://profryanthompson.com/"
+      url: "https://profryanthompson.com/",
+      repo: "https://github.com/katjones23/Dr-Ryan-Thompson-Webpage"
     };
   
     var n2moviesObj = {
       gif: "./assets/images/n2movies.gif",
       description: "A web application that populates movie recommendations based off of a movie name.  Built with HTML, CSS, and Javascript, using data from APIs.",
-      url: "https://katjones23.github.io/N2Movies/"
+      url: "https://katjones23.github.io/N2Movies/",
+      repo: "https://github.com/katjones23/N2Movies"
     };
   
     $("#portfolioModal").on("show.bs.modal", function (event) {
@@ -50,12 +52,13 @@ $(document).ready(function () {
       var gif =  modal.find('.gif')
       var description = modal.find(".projectDescription")
       var url = modal.find(".projectLink");
+      var repo = modal.find(".repoLink")
   
       if ($(imgClicked).data("modal") === "Dr. Ryan Thompson Portfolio Site") {
         gif.attr("src", rtSiteObj.gif);
         description.text(rtSiteObj.description);
         url.attr("href", rtSiteObj.url);
-        url.text(rtSiteObj.url);
+        repo.attr("href", rtSiteObj.repo);
       } else if ($(imgClicked).data("modal") === "N2Movies") {
         gif.attr("src", n2moviesObj.gif);
         description.text(n2moviesObj.description);
