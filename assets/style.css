@@ -56,8 +56,7 @@ h2 {
 
 /* Styling of boxes */
 .about-me,
-.portfolio,
-.contact-me {
+.portfolio {
     background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
     background: rgba(204, 204, 204, 0.5);
 }
@@ -101,28 +100,18 @@ h2 {
     box-shadow: 5px 5px 2px;
   }
 
-/* form padding */
-.contact-form {
-    padding-bottom: 25px;
+.contactCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* border-radius: 0; */
+    text-decoration: none;
 }
 
-/* Edit width of input boxes */
-.form-input {
-    width: 75%;
-    padding-left: 20px;
+.logo {
+    padding-bottom: 10px;
 }
 
-/* Submit button styling */
-.contactBtn, .closeBtn {
-    background-color: #444444;
-    border-color: #444444;
-    margin-left: 20px;
-}
-
-.contactBtn:hover {
-    background-color: #eeeeee;
-    border-color: #eeeeee;
-    color: #444444;
+.contactHeader, .card-body {
+    color: #eeeeee;
 }
 
 #myFooter {

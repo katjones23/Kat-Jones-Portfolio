@@ -6,13 +6,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <link rel="icon" type="image/png" href="./assets/images/LogoMakr_6bWKMZ.png">
+
   <!-- CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/style.css">
-
-  <!-- Favicon, credit https://gauger.io/fonticon/ -->
-  <link rel="icon" type="image/png" href="./assets/images/favicon.png">
 
   <title>Kat Jones Portfolio</title>
 </head>
@@ -231,33 +230,27 @@
       <section id="contactSec">
         <div class="row">
           <!-- Contact me div -->
-          <div class="col-md-8 offset-2 contact-me">
-            <!-- Contact Me Header -->
-            <div class="container contact-me-header">
-              <h2>Contact</h2>
+          <div class="col-md-6 offset-3 contact-me">
+            <div class="contactCard card text-center bg-dark">
+              <div class="card-header contactHeader">
+                <h5>Contact</h5>
+              </div>
+
+              <div class="card-body">
+                <img class="logo" src="./assets/images/LogoMakr_6bWKMZ.png" alt="Logo" style="max-height: 100px;">
+                <h5 class="card-title">Katherine Jones</h5>
+                <a class="contactLinks" href="mailto:kejone1414@gmail.com">kejone1414@gmail.com</a>
+                <p>
+                  <a href="https://www.linkedin.com/in/katherineetjones/" title="LinkedIn">
+                    <i id="linkedinIcon" class="fab fa-linkedin fa-2x"></i>
+                  </a>
+                  <a href="https://github.com/katjones23" title="GitHub">
+                    <i id="githubIcon" class="fab fa-github fa-2x"></i>
+                  </a>
+                </p>
+              </div>
+
             </div>
-
-            <!-- Contact Form -->
-            <form class="contact-form">
-              <!-- Name -->
-              <div class="form-group form-input">
-                <label for="inputName">Name</label>
-                <input class="form-control" type="text" placeholder="Name">
-              </div>
-              <!-- Email -->
-              <div class="form-group form-input">
-                <label for="inputEmail">Email</label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-              </div>
-              <!-- Message -->
-              <div class="form-group form-input">
-                <label for="inputMessage">Message</label>
-                <textarea class="form-control" id="inputMessage" rows="3" placeholder="Message"></textarea>
-              </div>
-              <!-- Submit button -->
-              <button type="submit" class="contactBtn btn btn-primary submit-btn rounded-0">Submit</button>
-            </form>
-
           </div>
         </div>
       </section>

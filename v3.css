@@ -1,0 +1,27 @@
+/* Edit width of input boxes */
+.form-input {
+    width: 75%;
+    padding-left: 20px;
+}
+
+/* Submit button styling */
+.contactBtn, .closeBtn {
+    background-color: #444444;
+    border-color: #444444;
+    margin-left: 20px;
+}
+
+.contactBtn:hover {
+    background-color: #eeeeee;
+    border-color: #eeeeee;
+    color: #444444;
+}
+
+.contact-form {
+    padding-bottom: 25px;
+}
+
+.contact-me {
+    background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+    background: rgba(204, 204, 204, 0.5);
+}
