@@ -2,7 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* image from Pexels https://www.pexels.com/photo/wood-texture-background-pine-82256/ */
 body {
     background-image: url(./images/backgroundImgTatiana.jpg);
     background-repeat: no-repeat;
@@ -11,11 +10,14 @@ body {
 }
 
 /* Navbar border bottom color */
-nav {
+.navbarCustom {
     border-bottom: 1px solid #eeeeee;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
-    width: 100%;
+    background-color: black;
+    min-height: 50px;
+    position: fixed;
+    top: 0;
 }
 
 /* Styling for navbar brand */
@@ -23,69 +25,92 @@ nav {
     font-size: 24px;
     font-weight: bolder;
     color: #eeeeee;
-    text-align: center;
-    border: #444444;
     font-family: 'Times New Roman', Times, serif;
+    padding-left: 2px;
 }
 
-/* Padding between body box and header/footer */
-.body-container {
-    padding-top: 100px;
+/* Padding between contact box and footer */
+.contact-container {
     padding-bottom: 100px;
 }
 
 .directionIcons {
-    filter: invert(1);
+    height: 100px;
 }
 
-section {
-    padding-top: 100px;
+#aboutSec {
+    background-color: transparent;
+    color: black;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: 10%;
+}
+
+.downArrow {
+    color: #444444;
 }
 
 /* Styling for header in body box */
 h2 {
     font-size: 30px;
     font-weight: bolder;
-    color: #444444;
+    color: black;
+    background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+    background: rgba(204, 204, 204, 0.75);
     font-family: 'Times New Roman', Times, serif;
     padding-top: 2%;
     padding-bottom: 2%;
-    border-bottom: 2px solid lightgrey;
-    margin: 2% 0 1% 0;
+    border-bottom: 2px solid gray;
+    margin-top: 100px;
+    text-align: center;
 }
 
-/* Styling of boxes */
-.about-me,
+/* Styling of portfolio box */
+.portfolioSecClass {
+    background: transparent;
+    height: 100vh;
+}
+
+.downArrowPort {
+    color: #eeeeee;
+}
+
 .portfolio {
-    background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
-    background: rgba(204, 204, 204, 0.5);
+    padding-bottom: 100px;
 }
 
 /* Styling and position for profile image */
 .profile {
-    position: relative;
+    margin: 0 auto;
     width: 200px;
     height: auto;
     padding: 1%;
+    border-radius: 50%;
 }
 
 /* Styling for text in About Me box */
 .about-me-text {
     box-sizing: border-box;
-    padding: 1%;
+    padding-left: 2%;
+    padding-right: 3%;
+    text-align: center;
+}
+
+.about-me-header {
+    color: #eeeeee;
 }
 
 /* padding for portfolio images */
 .portImg {
-    object-fit: cover;
-    padding-bottom: 5%;
-    padding-top: 5%;
+    max-height: 400px;
+    max-width: 50%;
     cursor: pointer;
+    margin: 0 auto;
 }
 
 .hero-text {
     text-align: center;
-    padding-top: 3%;
+    padding-top: 2%;
     position: absolute;
     top: 35%;
     left: 50%;
@@ -93,7 +118,7 @@ h2 {
     color: black;
     background-color: #eeeeee;
     opacity: 0.75;
-    width: 85%;
+    width: 40%;
     font-size: 20px;
     font-family: 'Times New Roman', serif;
     cursor: pointer;
@@ -101,8 +126,8 @@ h2 {
   }
 
 .contactCard {
+    margin-top: 100px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    /* border-radius: 0; */
     text-decoration: none;
 }
 
@@ -117,6 +142,7 @@ h2 {
 #myFooter {
     border-top: 1px solid #eeeeee;
     width: 100%;
+    background-color: black;
 }
 
 #linkedinIcon, #githubIcon {
@@ -137,16 +163,14 @@ h2 {
     font-size: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 766px) {
    /* adjusts box padding */
-    .body-container {
-       padding-top: 100px;
+    .contact-container {
        padding-right: 25px;
        padding-left: 25px;
    }
    
     /* centers box after 768px breakpoint */
-    .about-me,
     .portfolio,
     .contact-me {
         margin: 0 auto;
@@ -157,12 +181,30 @@ h2 {
         position: absolute;
         margin-top: 5px;
         width: 200px;
+        font-size: 18px;
+    }
+
+    #name {
+        font-size: 18px;
+    }
+
+    .navbarCustom {
+        font-size: 16px;
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 415px) {    
     .profile {
         width: auto;
         max-height: 200px;
+        margin-top: 15%;
+    }
+
+    .about-me-text {
+        font-size: 14px;
+    }
+
+    .hero-text {
+        font-size: 14px;
     }
 }
