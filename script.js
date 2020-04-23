@@ -13,7 +13,7 @@ $(document).ready(function () {
       event.preventDefault();
 
       // Store hash
-      var hash = this.hash;
+      const hash = this.hash;
 
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
@@ -33,42 +33,42 @@ $(document).ready(function () {
   })
 
   // objects to populate modals
-  var rtSiteObj = {
+  const rtSiteObj = {
     gif: "./assets/images/rtsite.gif",
     description: "A portfolio site built using HTML, CSS, and Javascript.",
     url: "https://profryanthompson.com/",
     repo: "https://github.com/katjones23/Dr-Ryan-Thompson-Webpage"
   };
 
-  var n2moviesObj = {
+  const n2moviesObj = {
     gif: "./assets/images/n2movies.gif",
     description: "A web application that populates movie recommendations based off of a movie name.  Built with HTML, CSS, and Javascript, using data from APIs.",
     url: "https://katjones23.github.io/N2Movies/",
     repo: "https://github.com/katjones23/N2Movies"
   };
 
-  var weatherAppObj = {
+  const weatherAppObj = {
     gif: "./assets/images/weatherapp.gif",
     description: "A dynamic weather app that allows users to search cities, see search history, quickly redo previous searches, and see current weather and a five-day forecast.  Built with HTML, CSS, and Javascript, using data from an API.",
     url: "https://katjones23.github.io/WeatherApp/",
     repo: "https://github.com/katjones23/WeatherApp"
   };
 
-  var dayPlannerObj = {
+  const dayPlannerObj = {
     gif: "./assets/images/dayplanner.gif",
     description: "A day planner app for work hours 8-5 to enter and save events for the same day.  Built with HTML, CSS, and Javascript.",
     url: "https://katjones23.github.io/DayPlanner/",
     repo: "https://github.com/katjones23/DayPlanner"
   };
 
-  var jsQuizObj = {
+  const jsQuizObj = {
     gif: "./assets/images/quiz.gif",
     description: "A short quiz of multiple choice questions to test your JavaScript knowledge.  Built with HTML, CSS, and Javascript.",
     url: "https://katjones23.github.io/JavaScriptQuiz/",
     repo: "https://github.com/katjones23/JavaScriptQuiz"
   };
 
-  var passGenObj = {
+  const passGenObj = {
     gif: "./assets/images/passwordgen.gif",
     description: "A webpage with a password generator that will take input from the user as to length and character types to include in the password.  Built with HTML, CSS, and Javascript.",
     url: "https://katjones23.github.io/KJ-password-generator/",
@@ -77,17 +77,17 @@ $(document).ready(function () {
 
   // function to populate modals
   $("#portfolioModal").on("show.bs.modal", function (event) {
-    var imgClicked = $(event.relatedTarget) // Image that triggered the modal
-    var site = imgClicked.data("modal") // Extract info from data-* attributes
+    const imgClicked = $(event.relatedTarget) // Image that triggered the modal
+    const site = imgClicked.data("modal") // Extract info from data-* attributes
 
     // Update the modal's content.
-    var modal = $(this)
+    const modal = $(this)
     modal.find('.modal-title').text(site)
 
-    var gif = modal.find('.gif')
-    var description = modal.find(".projectDescription")
-    var url = modal.find(".projectLink");
-    var repo = modal.find(".repoLink")
+    const gif = modal.find('.gif')
+    const description = modal.find(".projectDescription")
+    const url = modal.find(".projectLink");
+    const repo = modal.find(".repoLink")
 
     if ($(imgClicked).data("modal") === "Dr. Ryan Thompson Portfolio Site") {
       gif.attr("src", rtSiteObj.gif);
