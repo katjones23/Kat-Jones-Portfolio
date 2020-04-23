@@ -163,5 +163,6 @@ h2 {
 @media screen and (max-width: 350px) {
     .profile {
         width: auto;
+        max-height: 200px;
     }
 }
