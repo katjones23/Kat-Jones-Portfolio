@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="icon" type="image/png" href="./assets/images/LogoMakr_6bWKMZ.png">
+  <link rel="icon" type="image/png" href="./assets/images/DevKatLogo.png">
 
   <!-- CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -17,101 +17,111 @@
 </head>
 
 <body class="d-flex flex-column">
-  <!-- Portfolio information Modal -->
-  <div class="modal fade " id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="siteLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="siteLabel"></h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img class="gif img-fluid" alt="Demo Gif">
-          <p class="projectDescription"></p>
-          <div class="row d-flex justify-content-center">
-            <a class="projectLink" target="_blank" title="Website link">Site Link</a>
+  <div class="container">
+    <!-- Portfolio information Modal -->
+    <div class="modal fade " id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="siteLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="siteLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <div class="row d-flex justify-content-center">
-            <a class="repoLink" target="_blank" title="Code repository link">Repo Link</a>
+          <div class="modal-body">
+            <img class="gif img-fluid" alt="Demo Gif">
+            <p class="projectDescription"></p>
+            <div class="row d-flex justify-content-center">
+              <a class="projectLink" target="_blank" title="Website link">Site Link</a>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <a class="repoLink" target="_blank" title="Code repository link">Repo Link</a>
+            </div>
           </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="closeBtn btn btn-secondary" data-dismiss="modal">Close</button>
+          <div class="modal-footer">
+            <button type="button" class="closeBtn btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top navbarCustom">
+      <div class="container">
 
-    <!-- Navbar collapse button -->
-    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <!-- Navbar collapse button -->
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- Navbar brand -->
-    <div class="container navbar-brand">
-      <p id="name">Katherine Jones</p>
-    </div>
+        <!-- Navbar brand -->
+        <div class="navbar-brand" id="name">KATHERINE JONES</div>
 
-    <!-- Navbar collapse styling -->
-    <div class="collapse navbar-collapse ml-auto" id="navbarNav">
+        <!-- Navbar collapse styling -->
+        <div class="collapse navbar-collapse ml-auto" id="navbarNav">
 
-      <!-- Navbar menu items -->
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item ml-auto">
-          <a class="nav-link" href="#aboutSec" title="About">About</a>
-        </li>
-        <li class="nav-item ml-auto">
-          <a class="nav-link" href="#portfolioSec" title="Portfolio">Portfolio</a>
-        </li>
-        <li class="nav-item ml-auto">
-          <a class="nav-link" href="#contactSec" title="Contact">Contact</a>
-        </li>
-      </ul>
+          <!-- Navbar menu items -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ml-auto">
+              <a class="nav-link" href="#aboutSec" title="About">ABOUT</a>
+            </li>
+            <li class="nav-item ml-auto">
+              <a class="nav-link" href="#portfolioSec" title="Portfolio">PORTFOLIO</a>
+            </li>
+            <li class="nav-item ml-auto">
+              <a class="nav-link" href="#contactSec" title="Contact">CONTACT</a>
+            </li>
+          </ul>
 
-    </div>
-  </nav>
-
-  <main>
-    <div class="container body-container">
-
-      <section id="aboutSec">
-        <div class="row">
-          <!-- About me div -->
-          <div class="col-md-8 offset-2 about-me">
-            <!-- About Me Header -->
-            <div class="container about-me-header">
-              <h2>About Me</h2>
-            </div>
-
-            <!-- Profile image -->
-            <img src="./assets/images/profile.jpg" class="img-fluid float-left profile" alt="Image of Katherine Jones">
-
-            <!-- About me text -->
-            <p class="about-me-text">I am Katherine, also known as Kat.  I am a Full-Stack Developer, and particularly enjoy working on the logic behind the site or application.  I have a background in working with platform administration, and a degree in Chinese Language and Literature.  My education and my work has helped me develop an appreciation for technology and a more global, cross-cultural perspective.</p>
-
-            <p class="about-me-text">Outside of my career, I am passionate about rescue animals.  I also enjoy knitting, video games, and tabletop games.</p>
-          </div>
         </div>
-      </section>
+      </div>
+    </nav>
 
-      <section id="portfolioSec">
+    <section id="aboutSec">
+      <div class="row">
+        <!-- About me div -->
+        <div class="col about-me">
+
+          <!-- Profile image -->
+          <div class="row">
+            <img src="./assets/images/profile.jpg" class="img-fluid profile" alt="Image of Katherine Jones">
+          </div>
+
+          <!-- About me text -->
+          <p class="about-me-text">I am Katherine, also known as Kat. I am a Full-Stack Developer, and particularly
+            enjoy
+            working on the logic behind the site or application. I have a background in working with platform
+            administration, and a degree in Chinese Language and Literature. My education and my work has helped me
+            develop an appreciation for technology and a more global, cross-cultural perspective. Outside of my career,
+            I
+            am passionate about rescue animals. I also enjoy knitting, video games, and tabletop games.
+          </p>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="mx-auto">
+          <a class="nav-link" href="#portfolioSec" title="Portfolio">
+            <i class="downArrow fas fa-chevron-down fa-3x"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section id="portfolioSec" class="portfolioSecClass">
         <div class="row">
           <!-- Portfolio div -->
-          <div class="col-md-8 offset-2 portfolio">
+          <div class="col portfolio">
             <!-- Portfolio header -->
             <div class="container portfolio-header">
               <h2>Portfolio</h2>
             </div>
 
             <!-- portfolio carousel -->
-            <div id="carouselCards" class="carousel slide" data-ride="carousel">
+            <div id="carouselCards" class="carousel slide container" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselIndicators" data-slide-to="1"></li>
@@ -124,89 +134,76 @@
               <div class="carousel-inner">
 
                 <div class="carousel-item active">
-                  <div class="hero-image d-block w-100">
-                    <div class="col-6 offset-3">
-                      <img id="rtsite" class="img-fluid portImg" data-toggle="modal" data-target="#portfolioModal"
-                        data-modal="Dr. Ryan Thompson Portfolio Site" src="./assets/images/profryanthompsonsite.png"
-                        alt="Thumbnail:profryanthomspon.com">
-                      <div class="hero-text" data-toggle="modal" data-target="#portfolioModal"
-                        data-modal="Dr. Ryan Thompson Portfolio Site">
-                        <p>Click for More</p>
-                      </div>
-                    </div>
+                  <div class="row">
+                    <img id="rtsite" class="img-fluid portImg" data-toggle="modal" data-target="#portfolioModal"
+                      data-modal="Dr. Ryan Thompson Portfolio Site" src="./assets/images/profryanthompsonsite.png"
+                      alt="Thumbnail:profryanthomspon.com">
+                  </div>
+                  <div class="hero-text" data-toggle="modal" data-target="#portfolioModal"
+                    data-modal="Dr. Ryan Thompson Portfolio Site">
+                    <p>Click for More</p>
                   </div>
                 </div>
 
                 <div class="carousel-item">
-                  <div class="hero-image d-block w-100">
-                    <div class="col-6 offset-3">
-                      <img id="n2movies" class="img-fluid portImg" data-toggle="modal" data-target="#portfolioModal"
-                        data-modal="N2Movies" src="./assets/images/n2movies.png" alt="Thumbnail:N2Movies">
-                      <div class="hero-text" data-toggle="modal" data-target="#portfolioModal" data-modal="N2Movies">
-                        <p>Click for More</p>
-                      </div>
-                    </div>
+                  <div class="row">
+                    <img id="n2movies" class="img-fluid portImg" data-toggle="modal" data-target="#portfolioModal"
+                      data-modal="N2Movies" src="./assets/images/n2movies.png" alt="Thumbnail:N2Movies">
+                  </div>
+                  <div class="hero-text" data-toggle="modal" data-target="#portfolioModal" data-modal="N2Movies">
+                    <p>Click for More</p>
                   </div>
                 </div>
 
                 <div class="carousel-item">
-                  <div class="hero-image d-block w-100">
-                    <div class="col-6 offset-3">
-                      <img id="weatherApp" class="img-fluid portImg" data-toggle="modal" data-target="#portfolioModal"
-                        data-modal="Weather App" src="./assets/images/weatherApp.png" alt="Thumbnail:WeatherApp">
-                      <div class="hero-text" data-toggle="modal" data-target="#portfolioModal" data-modal="Weather App">
-                        <p>Click for More</p>
-                      </div>
-                    </div>
+                  <div class="row">
+                    <img id="weatherApp" class="img-fluid portImg" data-toggle="modal" data-target="#portfolioModal"
+                      data-modal="Weather App" src="./assets/images/weatherApp.png" alt="Thumbnail:WeatherApp">
+                  </div>
+                  <div class="hero-text" data-toggle="modal" data-target="#portfolioModal" data-modal="Weather App">
+                    <p>Click for More</p>
                   </div>
                 </div>
 
                 <div class="carousel-item">
-                  <div class="hero-image d-block w-100">
-                    <div class="col-6 offset-3">
-                      <img id="dayPlanner" class="img-fluid portImg" data-toggle="modal" data-target="#portfolioModal"
-                        data-modal="Day Planner" src="./assets/images/dayPlanner.png" alt="Thumbnail:DayPlanner">
-                      <div class="hero-text" data-toggle="modal" data-target="#portfolioModal" data-modal="Day Planner">
-                        <p>Click for More</p>
-                      </div>
-                    </div>
+                  <div class="row">
+                    <img id="dayPlanner" class="img-fluid portImg" data-toggle="modal" data-target="#portfolioModal"
+                      data-modal="Day Planner" src="./assets/images/dayPlanner.png" alt="Thumbnail:DayPlanner">
+                  </div>
+                  <div class="hero-text" data-toggle="modal" data-target="#portfolioModal" data-modal="Day Planner">
+                    <p>Click for More</p>
                   </div>
                 </div>
 
                 <div class="carousel-item">
-                  <div class="hero-image d-block w-100">
-                    <div class="col-6 offset-3">
-                      <img id="jsQuiz" class="img-fluid portImg" data-toggle="modal" data-target="#portfolioModal"
-                        data-modal="JavaScript Quiz" src="./assets/images/quiz.png" alt="Thumbnail:JSQuiz">
-                      <div class="hero-text" data-toggle="modal" data-target="#portfolioModal"
-                        data-modal="JavaScript Quiz">
-                        <p>Click for More</p>
-                      </div>
-                    </div>
+                  <div class="row">
+                    <img id="jsQuiz" class="img-fluid portImg" data-toggle="modal" data-target="#portfolioModal"
+                      data-modal="JavaScript Quiz" src="./assets/images/quiz.png" alt="Thumbnail:JSQuiz">
+                  </div>
+                  <div class="hero-text" data-toggle="modal" data-target="#portfolioModal" data-modal="JavaScript Quiz">
+                    <p>Click for More</p>
                   </div>
                 </div>
 
                 <div class="carousel-item">
-                  <div class="hero-image d-block w-100">
-                    <div class="col-6 offset-3">
-                      <img id="passwordGen" class="img-fluid portImg" data-toggle="modal" data-target="#portfolioModal"
-                        data-modal="Password Generator" src="./assets/images/passwordGen.png" alt="Thumbnail:PassGen">
-                      <div class="hero-text" data-toggle="modal" data-target="#portfolioModal"
-                        data-modal="Password Generator">
-                        <p>Click for More</p>
-                      </div>
-                    </div>
+                  <div class="row">
+                    <img id="passwordGen" class="img-fluid portImg" data-toggle="modal" data-target="#portfolioModal"
+                      data-modal="Password Generator" src="./assets/images/passwordGen.png" alt="Thumbnail:PassGen">
+                  </div>
+                  <div class="hero-text" data-toggle="modal" data-target="#portfolioModal"
+                    data-modal="Password Generator">
+                    <p>Click for More</p>
                   </div>
                 </div>
 
               </div>
 
               <a class="carousel-control-prev" href="#carouselCards" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon directionIcons" aria-hidden="true"></span>
+                <i class="fas fa-chevron-left fa-3x"></i>
                 <span class="sr-only">Previous</span>
               </a>
               <a class="carousel-control-next" href="#carouselCards" role="button" data-slide="next">
-                <span class="carousel-control-next-icon directionIcons" aria-hidden="true"></span>
+                <i class="fas fa-chevron-right fa-3x"></i>
                 <span class="sr-only">Next</span>
               </a>
 
@@ -214,52 +211,65 @@
 
           </div>
         </div>
-      </section>
-
-      <section id="contactSec">
         <div class="row">
-          <!-- Contact me div -->
-          <div class="col-md-6 offset-3 contact-me">
-            <div class="contactCard card text-center bg-dark">
-              <div class="card-header contactHeader">
-                <h5>Contact</h5>
-              </div>
-
-              <div class="card-body">
-                <img class="logo" src="./assets/images/LogoMakr_6bWKMZ.png" alt="Logo" style="max-height: 100px;">
-                <h5 class="card-title">Katherine Jones</h5>
-                <a class="resume" href="./assets/docs/KJ-Resume-2020(Public).pdf" target="_blank" title="Resume link">Katherine Jones Resume</a>
-                <br>
-                <br>
-                <a class="contactLinks" href="mailto:kejone1414@gmail.com" title="Email link">kejone1414@gmail.com</a>
-                <br>
-                <br>
-                <p>
-                  <a href="https://www.linkedin.com/in/katherineetjones/" title="LinkedIn">
-                    <i id="linkedinIcon" class="fab fa-linkedin fa-2x"></i>
-                  </a>
-                  <a href="https://github.com/katjones23" title="GitHub">
-                    <i id="githubIcon" class="fab fa-github fa-2x"></i>
-                  </a>
-                </p>
-              </div>
-
-            </div>
+          <div class="mx-auto">
+            <a class="nav-link" href="#contactSec" title="Contact">
+              <i class="downArrowPort fas fa-chevron-down fa-3x"></i>
+            </a>
           </div>
         </div>
       </section>
 
-    </div>
-  </main>
+      <div class="contact-container">
 
-  <footer id="myFooter" class="py-4 bg-dark text-white-50 justify-content-center">
-    <div class="container text-center justify-content-center">
-      <a href="https://www.linkedin.com/in/katherineetjones/" title="LinkedIn">
+        <section id="contactSec">
+          <div class="row">
+            <!-- Contact me div -->
+            <div class="col-md-6 offset-3 contact-me">
+              <div class="contactCard card text-center bg-dark">
+                <div class="card-header contactHeader">
+                  <h5>Contact</h5>
+                </div>
+
+                <div class="card-body">
+                  <img class="logo" src="./assets/images/DevKatLogo.png" alt="Logo" style="max-height: 100px;">
+                  <h5 class="card-title">Katherine Jones</h5>
+                  <a class="resume" href="./assets/docs/KJ-Resume-2020(Public).pdf" target="_blank"
+                    title="Resume link">Resume</a>
+                  <br>
+                  <br>
+                  <a class="contactLinks" href="mailto:kejone1414@gmail.com" title="Email link">thedevkat@gmail.com</a>
+                  <br>
+                  <br>
+                  <p>
+                    <a href="https://www.linkedin.com/in/katherineetjones/" title="LinkedIn" target="_blank">
+                      <i id="linkedinIcon" class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://github.com/katjones23" title="GitHub" target="_blank">
+                      <i id="githubIcon" class="fab fa-github fa-2x"></i>
+                    </a>
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <footer id="myFooter" class="py-4 text-white-50 justify-content-center navbar">
+    <div class="text-center justify-content-center">
+      <a href="https://www.linkedin.com/in/katherineetjones/" title="LinkedIn" target="_blank">
         <i id="linkedinIcon" class="fab fa-linkedin fa-2x"></i>
       </a>
-      <a href="https://github.com/katjones23" title="GitHub">
+      <a href="https://github.com/katjones23" title="GitHub" target="_blank">
         <i id="githubIcon" class="fab fa-github fa-2x"></i>
       </a>
+      <br>
+      <small>Created my free logo at <a href="https://Logomakr.com" target="_blank" title="LogoMakr URL">LogoMakr.com</a></small>
       <br>
       <small>&copy; <small id="copyrightYear"></small> Katherine Jones</small>
     </div>
