@@ -33,6 +33,12 @@ $(document).ready(function () {
   })
 
   // objects to populate modals
+  const readmeObj = {
+    gif: "./assets/images/readmegif.gif",
+    description: "A generator for a markdown README file for GitHub users.",
+    repo: "https://github.com/katjones23/READMEGenerator"
+  };
+
   const rtSiteObj = {
     gif: "./assets/images/rtsite.gif",
     description: "A portfolio site built using HTML, CSS, and Javascript.",
@@ -119,8 +125,12 @@ $(document).ready(function () {
       description.text(passGenObj.description);
       url.attr("href", passGenObj.url);
       repo.attr("href", passGenObj.repo);
+    } else if ($(imgClicked).data("modal") === "README Generator") {
+      gif.attr("src", readmeObj.gif);
+      description.text(readmeObj.description);
+      url.css("display", "none");
+      repo.attr("href", readmeObj.repo);
     };
-
   });
 
 });  
