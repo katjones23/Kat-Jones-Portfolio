@@ -98,31 +98,37 @@ $(document).ready(function () {
     if ($(imgClicked).data("modal") === "Dr. Ryan Thompson Portfolio Site") {
       gif.attr("src", rtSiteObj.gif);
       description.text(rtSiteObj.description);
+      url.css("display", "block");
       url.attr("href", rtSiteObj.url);
       repo.attr("href", rtSiteObj.repo);
     } else if ($(imgClicked).data("modal") === "N2Movies") {
       gif.attr("src", n2moviesObj.gif);
       description.text(n2moviesObj.description);
+      url.css("display", "block");
       url.attr("href", n2moviesObj.url);
       repo.attr("href", n2moviesObj.repo);
     } else if ($(imgClicked).data("modal") === "Weather App") {
       gif.attr("src", weatherAppObj.gif);
       description.text(weatherAppObj.description);
+      url.css("display", "block");
       url.attr("href", weatherAppObj.url);
       repo.attr("href", weatherAppObj.repo);
     } else if ($(imgClicked).data("modal") === "Day Planner") {
       gif.attr("src", dayPlannerObj.gif);
       description.text(dayPlannerObj.description);
+      url.css("display", "block");
       url.attr("href", dayPlannerObj.url);
       repo.attr("href", dayPlannerObj.repo);
     } else if ($(imgClicked).data("modal") === "JavaScript Quiz") {
       gif.attr("src", jsQuizObj.gif);
       description.text(jsQuizObj.description);
+      url.css("display", "block");
       url.attr("href", jsQuizObj.url);
       repo.attr("href", jsQuizObj.repo);
     } else if ($(imgClicked).data("modal") === "Password Generator") {
       gif.attr("src", passGenObj.gif);
       description.text(passGenObj.description);
+      url.css("display", "block");
       url.attr("href", passGenObj.url);
       repo.attr("href", passGenObj.repo);
     } else if ($(imgClicked).data("modal") === "README Generator") {
