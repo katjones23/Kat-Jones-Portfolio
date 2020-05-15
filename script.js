@@ -33,12 +33,19 @@ $(document).ready(function () {
   })
 
   // objects to populate modals
+  const noteObj = {
+    gif: "./assets/images/notetakergif.gif",
+    description: "A web app to write, save, and delete notes. Uses Express to save and retrieve the notes from a JSON file.  Built using Node.js, Express.js, JavaScript, HTML, and CSS.",
+    url: "https://kat-jones-express-note-taker.herokuapp.com/",
+    repo: "https://github.com/katjones23/NoteTaker"
+  };
+
   const employeeObj = {
     gif: "./assets/images/employeegif.gif",
     description: "A Node CLI that prompts the user for information about employees, and generates an HTML file that displays summaries for each person.  Built using Node.js, JavaScript, HTML, and CSS.",
     repo: "https://github.com/katjones23/EmployeeTemplate"
   };
-  
+
   const readmeObj = {
     gif: "./assets/images/readmegif.gif",
     description: "A generator for a markdown README file for GitHub users.  Built using Node.js, JavaScript, and Markdown.",
@@ -137,6 +144,12 @@ $(document).ready(function () {
       url.css("display", "block");
       url.attr("href", passGenObj.url);
       repo.attr("href", passGenObj.repo);
+    } else if ($(imgClicked).data("modal") === "Note Taker") {
+      gif.attr("src", noteObj.gif);
+      description.text(noteObj.description);
+      url.css("display", "block");
+      url.attr("href", noteObj.url);
+      repo.attr("href", noteObj.repo);
     } else if ($(imgClicked).data("modal") === "Employee Template") {
       gif.attr("src", employeeObj.gif);
       description.text(employeeObj.description);
