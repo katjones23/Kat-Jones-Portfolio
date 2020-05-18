@@ -61,7 +61,7 @@ $(document).ready(function () {
 
   const n2moviesObj = {
     gif: "./assets/images/n2movies.gif",
-    description: "A web application that populates movie recommendations based off of a movie name.  Built with HTML, CSS, and JavaScript, using data from APIs.",
+    description: "A collaboratively developed web application that populates movie recommendations based off of a movie name.  Built with HTML, CSS, and JavaScript, using data from APIs.",
     url: "https://katjones23.github.io/N2Movies/",
     repo: "https://github.com/katjones23/N2Movies"
   };
