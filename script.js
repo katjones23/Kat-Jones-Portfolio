@@ -33,6 +33,13 @@ $(document).ready(function () {
   })
 
   // objects to populate modals
+  const recipeObj = {
+    gif: "./assets/images/recipexchangegif.gif",
+    description: "“Recipe-Xchange” is a web app built with a group for saving and searching recipes with nutritional information calculated and provided. Utilizes user authentication and built with Sequelize, Node, Express, an API, and NPM packages.",
+    url: "https://recipe-xchange.herokuapp.com/",
+    repo: "https://github.com/AndreaGT91/Recipe-Xchange"
+  };
+  
   const noteObj = {
     gif: "./assets/images/notetakergif.gif",
     description: "A web app to write, save, and delete notes. Uses Express to save and retrieve the notes from a JSON file.  Built using Node.js, Express.js, JavaScript, HTML, and CSS.",
@@ -160,7 +167,13 @@ $(document).ready(function () {
       description.text(readmeObj.description);
       url.css("display", "none");
       repo.attr("href", readmeObj.repo);
+    } else if ($(imgClicked).data("modal") === "Recipe-Xchange") {
+      gif.attr("src", recipeObj.gif);
+      description.text(recipeObj.description);
+      url.css("display", "block");
+      url.attr("href", recipeObj.url);
+      repo.attr("href", recipeObj.repo);
     };
   });
-
+  recipeObj
 });  
