@@ -33,10 +33,10 @@
             <img class="gif img-fluid" alt="Demo Gif">
             <p class="projectDescription"></p>
             <div class="row d-flex justify-content-center">
-              <a class="projectLink" target="_blank" title="Website link">Site Link</a>
+              <a class="projectLink" rel="noopener noreferrer" target="_blank" title="Website link">Site Link</a>
             </div>
             <div class="row d-flex justify-content-center">
-              <a class="repoLink" target="_blank" title="Code repository link">Repo Link</a>
+              <a class="repoLink" rel="noopener noreferrer" target="_blank" title="Code repository link">Repo Link</a>
             </div>
           </div>
           <div class="modal-footer">
@@ -99,6 +99,9 @@
             am passionate about rescue animals. I also enjoy knitting, video games, and tabletop games.
           </p>
 
+          <p class="about-me-text">Skills:</p>
+          <p class="about-me-text">JavaScript | HTML | CSS | jQuery | Bootstrap | Materialize | Node | Express | MySql | Sequelize | MongoDB | Mongoose | React | NPM | Git Bash | GitHub</p>
+
         </div>
       </div>
       <div class="row">
@@ -128,11 +131,6 @@
                 <li data-target="#carouselIndicators" data-slide-to="2"></li>
                 <li data-target="#carouselIndicators" data-slide-to="3"></li>
                 <li data-target="#carouselIndicators" data-slide-to="4"></li>
-                <li data-target="#carouselIndicators" data-slide-to="5"></li>
-                <li data-target="#carouselIndicators" data-slide-to="6"></li>
-                <li data-target="#carouselIndicators" data-slide-to="7"></li>
-                <li data-target="#carouselIndicators" data-slide-to="8"></li>
-                <li data-target="#carouselIndicators" data-slide-to="9"></li>
 
               </ol>
 
@@ -156,17 +154,6 @@
                   </div>
                   <div class="hero-text" data-toggle="modal" data-target="#portfolioModal"
                     data-modal="Note Taker">
-                    <p>Click for More</p>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="row">
-                    <img id="employeetemplate" class="img-fluid portImg" data-toggle="modal" data-target="#portfolioModal"
-                      data-modal="Employee Template" src="./assets/images/employeetemplate.png" alt="Thumbnail:employeetemplate">
-                  </div>
-                  <div class="hero-text" data-toggle="modal" data-target="#portfolioModal"
-                    data-modal="Employee Template">
                     <p>Click for More</p>
                   </div>
                 </div>
@@ -204,56 +191,15 @@
                   </div>
                 </div>
 
-                <div class="carousel-item">
-                  <div class="row">
-                    <img id="weatherApp" class="img-fluid portImg" data-toggle="modal" data-target="#portfolioModal"
-                      data-modal="Weather App" src="./assets/images/weatherApp.png" alt="Thumbnail:WeatherApp">
-                  </div>
-                  <div class="hero-text" data-toggle="modal" data-target="#portfolioModal" data-modal="Weather App">
-                    <p>Click for More</p>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="row">
-                    <img id="dayPlanner" class="img-fluid portImg" data-toggle="modal" data-target="#portfolioModal"
-                      data-modal="Day Planner" src="./assets/images/dayPlanner.png" alt="Thumbnail:DayPlanner">
-                  </div>
-                  <div class="hero-text" data-toggle="modal" data-target="#portfolioModal" data-modal="Day Planner">
-                    <p>Click for More</p>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="row">
-                    <img id="jsQuiz" class="img-fluid portImg" data-toggle="modal" data-target="#portfolioModal"
-                      data-modal="JavaScript Quiz" src="./assets/images/quiz.png" alt="Thumbnail:JSQuiz">
-                  </div>
-                  <div class="hero-text" data-toggle="modal" data-target="#portfolioModal" data-modal="JavaScript Quiz">
-                    <p>Click for More</p>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="row">
-                    <img id="passwordGen" class="img-fluid portImg" data-toggle="modal" data-target="#portfolioModal"
-                      data-modal="Password Generator" src="./assets/images/passwordGen.png" alt="Thumbnail:PassGen">
-                  </div>
-                  <div class="hero-text" data-toggle="modal" data-target="#portfolioModal"
-                    data-modal="Password Generator">
-                    <p>Click for More</p>
-                  </div>
-                </div>
-
               </div>
 
               <a class="carousel-control-prev" href="#carouselCards" role="button" data-slide="prev">
-                <i class="fas fa-chevron-left fa-3x"></i>
+                <i class="portArrow fas fa-chevron-left fa-5x"></i>
                 <span class="sr-only">Previous</span>
               </a>
               <a class="carousel-control-next" href="#carouselCards" role="button" data-slide="next">
-                <i class="fas fa-chevron-right fa-3x"></i>
                 <span class="sr-only">Next</span>
+                <i class="portArrow fas fa-chevron-right fa-5x"></i>
               </a>
 
             </div>
@@ -263,7 +209,7 @@
         <div class="row">
           <div class="mx-auto">
             <a class="nav-link" href="#contactSec" title="Contact">
-              <i class="downArrowPort fas fa-chevron-down fa-3x"></i>
+              <i class="portArrow fas fa-chevron-down fa-3x"></i>
             </a>
           </div>
         </div>
@@ -283,7 +229,7 @@
                 <div class="card-body">
                   <img class="logo" src="./assets/images/DevKatLogo.png" alt="Logo" style="max-height: 100px;">
                   <h5 class="card-title">Katherine Jones</h5>
-                  <a class="resume" href="./assets/docs/KatherineJonesResume.pdf" target="_blank"
+                  <a class="resume" href="./assets/docs/KatherineJonesResume.pdf" rel="noopener noreferrer" target="_blank"
                     title="Resume link">Resume</a>
                   <br>
                   <br>
@@ -291,10 +237,10 @@
                   <br>
                   <br>
                   <p>
-                    <a href="https://www.linkedin.com/in/katherineetjones/" title="LinkedIn" target="_blank">
+                    <a href="https://www.linkedin.com/in/katherineetjones/" title="LinkedIn" rel="noopener noreferrer" target="_blank">
                       <i id="linkedinIcon" class="fab fa-linkedin fa-2x"></i>
                     </a>
-                    <a href="https://github.com/katjones23" title="GitHub" target="_blank">
+                    <a href="https://github.com/katjones23" title="GitHub" rel="noopener noreferrer" target="_blank">
                       <i id="githubIcon" class="fab fa-github fa-2x"></i>
                     </a>
                   </p>
@@ -311,14 +257,14 @@
 
   <footer id="myFooter" class="py-4 text-white-50 justify-content-center navbar">
     <div class="text-center justify-content-center">
-      <a href="https://www.linkedin.com/in/katherineetjones/" title="LinkedIn" target="_blank">
+      <a href="https://www.linkedin.com/in/katherineetjones/" title="LinkedIn" rel="noopener noreferrer" target="_blank">
         <i id="linkedinIcon" class="fab fa-linkedin fa-2x"></i>
       </a>
-      <a href="https://github.com/katjones23" title="GitHub" target="_blank">
+      <a href="https://github.com/katjones23" title="GitHub" rel="noopener noreferrer" target="_blank">
         <i id="githubIcon" class="fab fa-github fa-2x"></i>
       </a>
       <br>
-      <small>Created my free logo at <a href="https://Logomakr.com" target="_blank"
+      <small>Created my free logo at <a href="https://Logomakr.com" rel="noopener noreferrer" target="_blank"
           title="LogoMakr URL">LogoMakr.com</a></small>
       <br>
       <small>&copy; <small id="copyrightYear"></small> Katherine Jones</small>

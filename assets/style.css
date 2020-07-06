@@ -34,10 +34,6 @@ body {
     padding-bottom: 100px;
 }
 
-.directionIcons {
-    height: 100px;
-}
-
 #aboutSec {
     background-color: transparent;
     color: black;
@@ -69,14 +65,15 @@ h2 {
 .portfolioSecClass {
     background: transparent;
     height: 100vh;
+    margin-top: 100px;
 }
 
-.downArrowPort {
-    color: #eeeeee;
+.portArrow {
+    color:white;
 }
 
 .portfolio {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 /* Styling and position for profile image */
